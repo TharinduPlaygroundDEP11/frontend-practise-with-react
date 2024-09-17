@@ -6,6 +6,7 @@ import RegisterCar from './pages/RegisterCar';
 import ApplyService from './pages/ApplyService';
 import CurrentJobs from './pages/CurrentJobs';
 import './App.css';
+import Dashboard from './pages/Dashboard';
 
 const ApplyServiceWrapper = () => {
   const { carId } = useParams();
@@ -16,6 +17,7 @@ function App() {
     return (
         <Router>
             <Routes>
+                <Route path="/" element={<Dashboard />} />
                 <Route path="/customers" element={<CustomerList />} />
                 <Route path="/register-customer" element={<RegisterCustomer />} />
                 <Route path="/register-car" element={<RegisterCar />} />
