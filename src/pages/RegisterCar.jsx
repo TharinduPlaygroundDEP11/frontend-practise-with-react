@@ -47,7 +47,7 @@ const RegisterCar = () => {
 
     return (
         <div>
-            <h2>Register Car</h2>
+            <h2 className='text-3xl font-bold underline'>Register Car</h2>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
